@@ -8,9 +8,16 @@ $(document).ready(function() {
 	}
 
 	$("#get-quote").click(function(){
-		console.log("clicked");
 		var quoteNum = getRandomInt(bibleQuotes.length);
 		$("#quote").text(bibleQuotes[quoteNum]);
+		console.log(quoteNum);
+	});
+
+	$("#submit-quote").click(function(){
+		var newQuote = document.getElementById("new-quote").value;
+		bibleQuotes.push(newQuote);
+		document.getElementById("new-quote").value = "";
+
 	});
 
 });
