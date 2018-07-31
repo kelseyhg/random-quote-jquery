@@ -2,25 +2,16 @@
 
 
 $(document).ready(function() {
-	//All your code here
 
-console.log(bibleQuotes.length);
+	function getRandomInt(max) {
+	  return Math.floor(Math.random() * Math.floor(max));
+	}
 
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-$("#get-quote").click(function(){
-	console.log("clicked");
-	returnQuote();
-});
-
-function returnQuote() {
-	var quoteNum = getRandomInt(14);
-	console.log(bibleQuotes[quoteNum]);
-	document.getElementById("quote").textContent = bibleQuotes[quoteNum];
-}
+	$("#get-quote").click(function(){
+		console.log("clicked");
+		var quoteNum = getRandomInt(bibleQuotes.length);
+		$("#quote").text(bibleQuotes[quoteNum]);
+	});
 
 });
 
