@@ -1,0 +1,27 @@
+body {
+	
+	background: linear-gradient(#46494f, black);
+	text-align: center;
+	width: 80vw;
+	height: 100vh;
+	margin: auto;
+
+}
+
+h1 {
+	color: white;
+	font-family: 'Cabin', sans-serif;
+	margin-top: 80px;
+	font-weight: normal;
+}
+
+#get-quote { 
+	color: black; 
+	padding: 10px;
+}
+
+#quote {
+	color: white;
+	font-family: 'Herr Von Muellerhoff', cursive;
+	font-size: 72px;
+}
